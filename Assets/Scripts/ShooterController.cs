@@ -24,8 +24,7 @@ public class ShooterController : MonoBehaviour
         for (; ; )
         {
             await Task.Delay(TimeSpan.FromSeconds(shootDelay));
-            var rotation = Quaternion.AngleAxis(transform.rotation.z, Vector3.up);
-            var bulletPattern = Instantiate(bulletPatternPrefab, transform.position, rotation);
+            var bulletPattern = Instantiate(bulletPatternPrefab, transform.position, Quaternion.identity);
         }
     }
 }
