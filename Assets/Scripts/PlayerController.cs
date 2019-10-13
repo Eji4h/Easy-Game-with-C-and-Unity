@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -8,6 +6,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float speed;
 
+    // Update is called once per frame
     void Update()
     {
 #if !UNITY_EDITOR && (UNITY_ANDROID || UNITY_IOS)
