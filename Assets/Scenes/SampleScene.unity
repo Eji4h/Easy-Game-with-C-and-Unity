@@ -112,6 +112,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &401346390 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3777423303397153545, guid: 445a7cda96f678c40b89cccb1a88790b,
+    type: 3}
+  m_PrefabInstance: {fileID: 3777423303717861957}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &401346391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401346390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d739748c6e9a7fc47be9d3648b9d930f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,7 +278,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 2.29, z: 0.23}
+  m_LocalPosition: {x: 0, y: 10, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -454,12 +473,12 @@ PrefabInstance:
     - target: {fileID: 3777423303397153544, guid: 445a7cda96f678c40b89cccb1a88790b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.545
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3777423303397153544, guid: 445a7cda96f678c40b89cccb1a88790b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 3777423303397153544, guid: 445a7cda96f678c40b89cccb1a88790b,
         type: 3}
