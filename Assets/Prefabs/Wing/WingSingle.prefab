@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4273489566629348811}
   - component: {fileID: 4273489566632219165}
   - component: {fileID: 4273489566631163283}
+  - component: {fileID: 114896842176101032}
   m_Layer: 0
   m_Name: WingSingle
   m_TagString: Untagged
@@ -77,3 +78,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &114896842176101032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4273489566628986019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f603545300e5f48aa0e925d882c691, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootDelay: 0.25
+  bulletPatternPrefab: {fileID: 6072491284374980889, guid: b8695965157a62b468617a5668defb5b,
+    type: 3}
