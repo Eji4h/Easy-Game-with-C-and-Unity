@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabs:
-  - {fileID: 2206827098989210587, guid: a39fc4e564ec47e44adefeec156184a8, type: 3}
+  - {fileID: 8455149712776762651, guid: 4476ba68487876b4cacd1224a65c6e24, type: 3}
 --- !u!1 &803636984
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,6 +621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 4848027931717465407, guid: 36ceb4534ff473041a0119b43c53c0a1, type: 3}
+  - {fileID: 5923455784913497138, guid: 6c2b886313de31d49b96c015950685f3, type: 3}
 --- !u!1 &1461496128
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,6 +667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 4848027931717465407, guid: 36ceb4534ff473041a0119b43c53c0a1, type: 3}
+  - {fileID: 5923455784913497138, guid: 6c2b886313de31d49b96c015950685f3, type: 3}
 --- !u!1 &1566907549
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 4848027931717465407, guid: 36ceb4534ff473041a0119b43c53c0a1, type: 3}
+  - {fileID: 5923455784913497138, guid: 6c2b886313de31d49b96c015950685f3, type: 3}
 --- !u!1001 &3777423303717861957
 PrefabInstance:
   m_ObjectHideFlags: 0
