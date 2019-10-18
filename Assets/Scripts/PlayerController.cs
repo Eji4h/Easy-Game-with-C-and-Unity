@@ -50,4 +50,16 @@ public class PlayerController : MonoBehaviour
         var step = Time.deltaTime * speed;
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, step);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        bool isEnemy = other.tag == "Enemy";
+        if (isEnemy)
+        {
+            var enemyController = other.GetComponent<EnemyController>();
+            enemyController.Destroy();
+            Time.timeScale = 0.25f;
+            Destroy(gameObject);
+        }
+    }
 }
