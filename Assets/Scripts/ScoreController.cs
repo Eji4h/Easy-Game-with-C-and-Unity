@@ -3,12 +3,23 @@ using UnityEngine.UI;
 
 public class ScoreController : MonoBehaviour
 {
-	[SerializeField]
-	private Text scoreLabel;
+    public static ScoreController Instance { get; private set; }
 
-	public void SetScore(int val)
-	{
-		scoreLabel.text = $"{val}";
-	}
+    [SerializeField]
+    private int score;
 
+    [SerializeField]
+    private Text scoreLabel;
+
+
+    void Awake()
+    {
+        Instance = this;
+    }
+
+    public void IncreaseScore(int increateScore)
+    {
+        score += increateScore;
+        scoreLabel.text = $"{score}";
+    }
 }

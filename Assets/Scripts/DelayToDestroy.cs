@@ -11,6 +11,6 @@ public class DelayToDestroy : MonoBehaviour
     async void Start()
     {
         await Task.Delay(TimeSpan.FromSeconds(destoryDelay));
-        GameObject.Destroy(gameObject);
+        Destroy(gameObject);
     }
 }

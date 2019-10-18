@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
             targetZAngle = deltaXPos > 0f ? -moveAngle : moveAngle;
 
         var targetRotation = Quaternion.AngleAxis(targetZAngle, Vector3.forward);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * speed);
+        var step = Time.deltaTime * speed;
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, step);
     }
 }
