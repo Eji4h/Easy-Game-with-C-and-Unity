@@ -8,7 +8,7 @@ public class ScoreController : MonoBehaviour
 
 	public void SetScore(int val)
 	{
-		scoreLabel.text = val.ToString();
+		scoreLabel.text = $"{val}";
 	}
 
 }
