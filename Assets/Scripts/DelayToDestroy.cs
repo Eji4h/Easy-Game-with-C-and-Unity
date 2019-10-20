@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Threading.Tasks;
 using UnityEngine;
 
@@ -8,9 +9,8 @@ public class DelayToDestroy : MonoBehaviour
     private float destoryDelay;
 
     // Start is called before the first frame update
-    async void Start()
+    IEnumerator Start()
     {
-        await Task.Delay(TimeSpan.FromSeconds(destoryDelay));
-        Destroy(gameObject);
+        yield return new WaitForSeconds(destoryDelay);
     }
 }

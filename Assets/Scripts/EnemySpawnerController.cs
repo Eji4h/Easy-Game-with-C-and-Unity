@@ -1,6 +1,6 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -13,17 +13,12 @@ public class EnemySpawnerController : MonoBehaviour
     private List<EnemySpawner> enemySpawners;
 
     // Start is called before the first frame update
-    void Start()
+    IEnumerator Start()
     {
-        SpawnInterval(spawnDelay, enemySpawners);
-    }
-
-    async void SpawnInterval(float spawnDelay, List<EnemySpawner> enemySpawners)
-    {
+        var waitForSeconds = new WaitForSeconds(spawnDelay);
         for (; ; )
         {
-            await Task.Delay(TimeSpan.FromSeconds(spawnDelay));
-
+            yield return waitForSeconds;
             var randomSpawnPointIndex = Random.Range(0, enemySpawners.Count);
             var spawnPointSelected = enemySpawners[randomSpawnPointIndex];
             spawnPointSelected.Spawn();

@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using UnityEngine;
 
 public class ShooterController : MonoBehaviour
@@ -14,16 +11,13 @@ public class ShooterController : MonoBehaviour
     private GameObject bulletPatternPrefab;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        ShootInterval(shootDelay);
-    }
 
-    async void ShootInterval(float shootDelay)
+    IEnumerator Start()
     {
+        var waitForSeconds = new WaitForSeconds(shootDelay);
         for (; ; )
         {
-            await Task.Delay(TimeSpan.FromSeconds(shootDelay));
+            yield return waitForSeconds;
             Instantiate(bulletPatternPrefab, transform.position, Quaternion.identity);
         }
     }
