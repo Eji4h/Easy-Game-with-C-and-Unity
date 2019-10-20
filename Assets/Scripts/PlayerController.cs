@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        bool isEnemy = other.tag == "Enemy";
+        bool isEnemy = other.CompareTag("Enemy");
         if (isEnemy)
         {
             var enemyController = other.GetComponent<EnemyController>();
