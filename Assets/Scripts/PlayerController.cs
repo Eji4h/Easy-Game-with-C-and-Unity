@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
         {
             var enemyController = other.GetComponent<EnemyController>();
             enemyController.Destroy();
-            Time.timeScale = 0.25f;
+            GameController.Instance.GameOver();
             Destroy(gameObject);
         }
     }
