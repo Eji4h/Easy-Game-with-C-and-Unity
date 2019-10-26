@@ -14,10 +14,9 @@ public class ShooterController : MonoBehaviour
 
     IEnumerator Start()
     {
-        var waitForSeconds = new WaitForSeconds(shootDelay);
         for (; ; )
         {
-            yield return waitForSeconds;
+            yield return new WaitForSeconds(shootDelay);
             Instantiate(bulletPatternPrefab, transform.position, Quaternion.identity);
         }
     }
